@@ -1,0 +1,437 @@
+/*General Styling begins*/
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #e02c6d;
+  border: 0px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 22px;
+}
+
+button i {
+  font-size: 20px;
+}
+
+button > * {
+  padding: 0 6px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #e02c6d;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+/*General Styling ends*/
+
+
+/*Header begins*/
+header {
+  height: 667px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #2d25a0;
+  color: white;
+}
+
+header .header_container {
+  max-width: 1160px;
+  width: 100vw;
+  padding: 0 110px;
+}
+
+header .header_container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 40px 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header .header_container nav .fa-bars {
+  display: none;
+}
+
+header .header_container nav ul {
+  padding: 0;
+}
+
+header .header_container nav ul li {
+  list-style: none;
+  margin-right: 36px;
+  display: inline;
+}
+
+header .header_container nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header .header_container .header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header .header_container .header_content .header_title {
+  z-index: 5;
+}
+
+header .header_container .header_content .header_title h1 {
+  font-size: 64px;
+  margin: 20px 0;
+}
+
+header .header_container .header_content #banner {
+  display: none;
+}
+
+header .header_container .header_content .header_banner {
+  position: relative;
+  right: 556px;
+}
+
+header .header_container .header_content .header_banner img {
+  position: absolute;
+}
+
+header .header_container .header_content .header_banner:hover > #img1 {
+  -webkit-transform: translate(-30px, 30px);
+  transform: translate(-30px, 30px);
+}
+
+header .header_container .header_content .header_banner:hover > #img2 {
+  -webkit-transform: translate(-15px, 15px);
+  transform: translate(-15px, 15px);
+}
+
+header .header_container .header_content .header_banner:hover > #img3 {
+  -webkit-transform: translate(15px, -15px);
+  transform: translate(15px, -15px);
+}
+
+#img1 {
+  z-index: 3;
+  left: -25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#img2 {
+  z-index: 2;
+  left: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#img3 {
+  z-index: 1;
+  top: -15px;
+  left: 105px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*Header ends*/
+
+
+/*Player Card begins*/
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+main .card_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  padding: 80px 0;
+}
+
+main .card_container .card {
+  max-width: 330px;
+  width: auto;
+  height: 474px;
+  padding: 15px;
+  -webkit-box-shadow: #d0d0d0 0px 0px 20px 0px;
+  box-shadow: #d0d0d0 0px 0px 20px 0px;
+  margin: auto;
+}
+
+main .card_container .card h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+main .card_container .card p {
+  font-size: 16px;
+}
+
+main .card_container .card img {
+  width: 100%;
+}
+/*Player Card ends*/
+
+
+/*Team Information begins*/
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+section .section_container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  border: 3px dashed black;
+  margin: 5px;
+  padding: 10px 0;
+}
+
+section .section_container .item_header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+section .section_container .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+section .section_container .item .team_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+section .section_container .item .team_name p {
+  margin: 0 5px;
+}
+/*Team Information ends*/
+
+
+/*Youtube section begins*/
+.youtube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.youtube h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.youtube iframe {
+  max-width: 560px;
+  width: 100%;
+}
+/*Youtube section ends*/
+
+
+/*Footer begins*/
+footer {
+  text-align: center;
+}
+
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+footer .logo img {
+  width: 200px;
+  padding: 0 15px;
+}
+
+footer .logo p {
+  font-size: 72px;
+  font-family: "Niconne", cursive;
+  color: #10437a;
+  padding: 0 15px;
+  margin: 0;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer .social a {
+  margin: 20px 10px;
+  text-decoration: none;
+}
+
+footer .social a i {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  color: #969bab;
+  background-color: #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 18px;
+  margin: 20px 0 50px 0;
+}
+/*Footer end*/
+
+
+/*Tablet Styling begins*/
+@media only screen and (max-width: 800px) {
+  header {
+    height: auto;
+  }
+  header .header_container nav ul {
+    display: none;
+  }
+  header .header_container nav .fa-bars {
+    display: block !important;
+    font-size: 30px;
+  }
+  header .header_container .header_content {
+    display: block;
+  }
+  header .header_container .header_content #banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+  header .header_container .header_content .header_banner {
+    display: none;
+  }
+  main .card_container {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .card_container .card {
+    width: auto;
+  }
+}
+/*Tablet Styling ends*/
+
+
+/*Phone Styling begins*/
+@media only screen and (max-width: 550px) {
+  header .header_container {
+    padding: 5%;
+  }
+  header .header_container .header_content .header_title h1 {
+    font-size: 40px;
+  }
+  main .card_container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  main .card_container .card {
+    width: auto;
+  }
+  footer .logo img {
+    width: 115px;
+  }
+  footer .logo p {
+    font-size: 40px;
+  }
+}
+/*Phone Styling ends*/
